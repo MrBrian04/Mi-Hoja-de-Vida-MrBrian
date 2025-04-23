@@ -87,7 +87,7 @@ h2 {
 section {
     background-color: white;
     padding: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     animation: slideIn 0.5s ease-out;
@@ -126,12 +126,16 @@ section {
 }
 
 /* Habilidades */
+.skills h2 {
+    text-align: center;
+}
 .skills-list {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
+    
 }
 
 .skills-list li {
@@ -140,11 +144,13 @@ section {
     color: white;
     border-radius: 20px;
     transition: all 0.3s ease;
+    
 }
 
 .skills-list li:hover {
     background-color: #2980b9;
     transform: scale(1.05);
+    
 }
 
 /* Footer */
