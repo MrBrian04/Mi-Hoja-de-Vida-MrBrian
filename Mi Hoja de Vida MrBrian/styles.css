@@ -86,11 +86,11 @@ h2 {
 /* Secciones */
 section {
     background-color: white;
-    padding: 30px;
+    padding: 25px;
     margin-bottom: 25px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    animation: slideIn 0.5s ease-out;
+    animation: slideIn 1s ease-out;
 }
 
 /* Lista de contacto */
@@ -122,8 +122,9 @@ section {
 
 .experience-item ul {
     margin-left: 20px;
-    margin-top: 10px;
+    margin-top: 0px;
 }
+
 
 /* Habilidades */
 .skills h2 {
@@ -152,6 +153,10 @@ section {
     transform: scale(1.05);
     
 }
+.skills h2:nth-of-type(2) {
+    margin-top: 20px;
+}
+
 
 /* Footer */
 footer {
