@@ -115,9 +115,8 @@ section {
 
 /* Educación y Experiencia */
 .education-item, .experience-item {
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #eee;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
 }
 
 .experience-item ul {
