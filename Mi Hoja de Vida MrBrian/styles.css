@@ -1,0 +1,205 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+/* Header con imagen de fondo */
+.header-background {
+    text-align: center;
+    padding: 60px 0;
+    margin-bottom: 30px;
+    background-image: url('images/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Overlay oscuro para mejorar la legibilidad del texto */
+.header-background::before {
+    content: '';
+    position: absolute;
+    top: 0.5;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.profile-container {
+    position: relative;
+    z-index: 2;
+    animation: fadeIn 1s ease-in;
+}
+
+/* Estilos para la foto de perfil */
+.profile-image {
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #fff;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos del texto en el header */
+.header-background h1,
+.header-background h2 {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 2.5em;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+/* Secciones */
+section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    animation: slideIn 0.5s ease-out;
+}
+
+/* Lista de contacto */
+.contact-info ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-info li {
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.contact-info li:hover {
+    transform: translateY(-5px);
+}
+
+/* Educación y Experiencia */
+.education-item, .experience-item {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.experience-item ul {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+/* Habilidades */
+.skills-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.skills-list li {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.skills-list li:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .header-background {
+        padding: 30px 0;
+    }
+
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+    }
+
+    .contact-info ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+} 
